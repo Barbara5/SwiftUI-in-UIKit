@@ -12,15 +12,15 @@ struct LoadingAnimationView: View {
     var body: some View {
         
         HStack (spacing: 30) {
-            RectangleView()
-            RectangleView(delayAnimation: 0.4)
-            RectangleView(delayAnimation: 0.6)
+            SquareView()
+            SquareView(delayAnimation: 0.4)
+            SquareView(delayAnimation: 0.6)
         }
     }
 }
 
 
-struct RectangleView : View {
+struct SquareView : View {
     
     @State var delayAnimation : Double = 0
     @State var originalOffset: CGFloat = 0
