@@ -2,6 +2,9 @@
 > This is a simple project that shows how you can integrate a SwiftUIView into an existing UIKit project.  
 > You can find my full article about the integration of both frameworks [here](https://medium.com/@barbarabeatrice95/swiftui-or-uikit-did-you-mean-swiftuikit-6eeb115c5e59).
 
+
+![gif appù](https://user-images.githubusercontent.com/61754424/162015530-68a216f9-cd58-4d24-b831-e2794f24667b.gif)
+
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
