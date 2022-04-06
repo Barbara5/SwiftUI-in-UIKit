@@ -5,7 +5,7 @@
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
-* [Embed a SwiftUI view in UIKit](#embed-a-SwiftUI-view-in-UIKit)
+* [Embed a SwiftUI view in UIKit](#embed-a-swiftui-view-in-uikit)
 * [Contact](#contact)
 
 ## General Information
@@ -19,27 +19,33 @@ This is actually just one of two projects that I worked on, you can find the "UI
 
 ## Embed a SwiftUI view in UIKit
 First of all, create a SwiftUI view inside the project (I created a simple custom loading animation).
-https://user-images.githubusercontent.com/61754424/161975828-5eb080d7-1c7c-4d90-a28e-f68305a15bbd.mp4
+
+https://user-images.githubusercontent.com/61754424/161977786-09dbad4d-f7d2-46a2-a7cb-7330b795ff71.mp4
+
 
 In order to bound it with the existing project, you'll need to place it inside a ContainerView, which you can add to the storyboard from the library.
-![Schermata 2022-03-25 alle 16.56.32.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d6cf4d7b-82ff-4342-959a-c4ea35119669/Schermata_2022-03-25_alle_16.56.32.png)
+![image](https://user-images.githubusercontent.com/61754424/161979063-2c600872-0d55-4f0f-b527-f3c547bb7f91.png)
+
 
 You may have noticed that along with the ContainerView, a ViewController has also popped up, which in this case we'll remove because it needs to be replaced with the UIHostingController.
-![Schermata 2022-03-25 alle 16.58.26.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/66f7d89a-c566-4b6b-bec8-e19ff05abdc4/Schermata_2022-03-25_alle_16.58.26.png)
+![image](https://user-images.githubusercontent.com/61754424/161979213-06b3412f-458b-40c7-aadc-a57ada4480b8.png)
+
 
 To do this, add a UIHostingController from the library, then connect the ContainerView to it with control-drag and then select "embed" from the menu that opens.
-![Schermata 2022-03-25 alle 16.58.44.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/13401087-b085-43b1-a3e2-c615694d0dac/Schermata_2022-03-25_alle_16.58.44.png)
+![image](https://user-images.githubusercontent.com/61754424/161979263-732304f7-c4d6-4f39-aa82-aefc78b48d41.png)
+![image](https://user-images.githubusercontent.com/61754424/161979341-37fe7357-b0b7-4ae6-86ba-208e1918c223.png)
 
-![Schermata 2022-03-25 alle 16.59.05.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9a2aa186-af32-4881-a7bb-13263a2a4171/Schermata_2022-03-25_alle_16.59.05.png)
 
 Now open the assistant and, first of all, import SwiftUI into the ViewController. 
-![Schermata 2022-03-25 alle 17.00.18.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ff6ca384-95b8-47bd-8e55-f45e85a6967a/Schermata_2022-03-25_alle_17.00.18.png)
+![image](https://user-images.githubusercontent.com/61754424/161979424-87980cb8-2b58-4140-a0d1-1da71caeb7da.png)
+
 
 Then control-drag the segue you just created in the view controller and give it a name.
-![Schermata 2022-03-25 alle 17.02.57.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7f4f21aa-ae4b-4d44-ac01-2e14343ea3dc/Schermata_2022-03-25_alle_17.02.57.png)
+![image](https://user-images.githubusercontent.com/61754424/161979493-2ebae202-1da3-4008-9f72-e0754bc7585a.png)
+
 
 Use auto-completion to help you and lastly enter the name of your SwiftUIView as the root view.
-![Schermata 2022-03-25 alle 17.07.26.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5abd0e4c-3608-4df5-818c-c60a0ebb5bb4/Schermata_2022-03-25_alle_17.07.26.png)
+![image](https://user-images.githubusercontent.com/61754424/161979553-2c2b05cc-9ff2-4921-9240-1dec1f2a383c.png)
 
 
 
