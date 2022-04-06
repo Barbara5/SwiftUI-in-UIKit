@@ -20,10 +20,10 @@ This is actually just one of two projects that I worked on, you can find the "UI
 ## Embed a SwiftUI view in UIKit
 First of all, create a SwiftUI view inside the project (I created a simple custom loading animation).
 
-https://user-images.githubusercontent.com/61754424/161977786-09dbad4d-f7d2-46a2-a7cb-7330b795ff71.mp4
+![gif animazione](https://user-images.githubusercontent.com/61754424/162015048-2db2b9da-3f95-40ed-bdc1-4d8b4634ceac.gif)
 
 
-In order to bound it with the existing project, you'll need to place it inside a ContainerView, which you can add to the storyboard from the library.
+In order to bind it with the existing project, you'll need to place it inside a ContainerView, which you can add to the storyboard from the library.
 ![image](https://user-images.githubusercontent.com/61754424/161979063-2c600872-0d55-4f0f-b527-f3c547bb7f91.png)
 
 
